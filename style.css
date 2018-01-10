@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:400,500,700,900');
+body{
+    background-image:url(img/fond.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:100vh; /*force le body à 100% de la hauteur car les objets dedans sont en absolute */
+    margin:0;
+	padding:0;
+	font-family: 'Lato', sans-serif;
+    color:#FFFFFF;
+}
+header{  
+    width:100%;
+    padding:5% 5% 5% 5%;
+    line-height: 5%;
+    display:flex;
+    justify-content: space-around;
+	flex-direction: row;
+	font-weight:300;
+	background:#FFFFFF;
+	color:#956A17;
+}
+header div:hover{
+	background:#956A17;
+	color:#FFFFFF;
+}
+#inscription{
+    display:none;
+}
+.zone{
+    position:absolute;
+    left:150px;
+    font-family: 'Lato', sans-serif;
+	color:#956A17;
+}
+#nom{
+    width:100px;
+}
+#prenom{
+    width:100px;
+}
+#adresse{
+    width:200px;
+}
+#cpadresse{
+    width:200px
+}
+#cp{
+    width:50px;
+}
+#ville{
+    width:150px;
+}
+#datenais{
+    width:120px;
+}
+#auteur{
+    width:200px;
+    height:20px;
+	color:#000000;
+}
+#publication{
+    display:none;
+    height:85%;
+}
+#containerarticles{
+    width:100%;
+    display:flex;
+    flex-flow:row wrap;
+    background-color:#FFFFFF;
+    flex-grow: 1;
+}
+.carre{
+    width: 200px;
+    height:200px;
+    margin:5% 5% 5% 5%;
+    padding:5% 5% 5% 5%;
+    background-color:#956A17;
+    border:1px solid black;
+    color:#FFFFFF;
+}
+.title{
+    margin:5% 5% 5% 5%;
+    padding:5% 5% 5% 5%;
+}
+.texte{
+    margin:5% 5% 5% 5%;
+    padding:5% 5% 5% 5%;
+}

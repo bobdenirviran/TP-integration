@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href = "/font-awesome-4.7.0/css/font–awesome.min.css">
+    <title>Reseau social</title>
+    <meta charset ="UTF-8"/>
+    <meta name="Reseau social" content = "Reseau social" />
+</head>
+<body>
+    <header>
+        <div id="inscrire"><i class="fa fa-plus-square" aria-hidden="true"></i> S'inscrire</div>
+        <div id="publier"><i class="fa fa-pencil-square" aria-hidden="true"></i> Publier</div>
+    </header>
+    <section>
+        <div id="inscription">
+            <form>
+                <span>Nom:</span>
+                <input type="text" id="nom" class="zone" name="nom" placeholder = "nom" value="MonNom">
+                <p class="error"></p>
+                <span>Prénom:</span>
+                <input type="text" id="prenom" class="zone" name="prenom" placeholder = "prénom" value="MonPrénom">
+                <p class="error"></p>
+                <span>Adresse:</span>
+                <input type="text" id="adresse" class="zone" name="adresse" placeholder = "adresse" value="MonAdresse">
+                <p class="error"></p>
+                <span>Complément adresse:</span>
+                <input type="text" id="cpladresse" class="zone" name="cpladresse" placeholder = "complément" value="MonComplément">
+                <p class="error"></p>
+                <span>Code postal:</span>
+                <input type="text" id="cp" class="zone" name="cp" placeholder = "code postal" value="66140">
+                <p class="error"></p>
+                <span>Ville:</span>
+                <input type="text" id="ville" class="zone" name="ville" placeholder = "ville" value="Canet">
+                <p class="error"></p>
+                <span>Date de naissance:</span>
+                <input type="date" id="datenais" class="zone" name="datenais" placeholder = "JJ/MM/AAAA" value="09/01/2018">
+                <p class="error"></p>
+                <span>Téléphone:</span>
+                <input type="text" id="phone" class="zone" name="phone" placeholder = "téléphone" value="0678081511">
+                <p class="error"></p>
+                <span>Adresse mail:</span>
+                <input type="text" id="mail" class="zone" name="mail" placeholder = "mail" value="Mon.Adresse@gmail.com">
+                <p class="error"></p>       
+                <input type="submit" id="validation" class="zone" value="valider">
+            </form>
+        </div>
+        <div id="publication">
+            </br>
+            <span>Auteur:</span>
+            <span id="auteur" class="zone" name="auteur"></span></br></br>
+            <form>
+                <span>Titre:</span>
+                <input type="text" id="titre" class="zone" name="titre" placeholder = "titre">
+                <p class="error"></p>
+                <span>Contenu:</span>
+                <input type="text" id="contenu" class="zone" name="contenu" placeholder = "contenu">
+                <p class="error"></p>
+                <input type="submit" id="ajout" class="zone" value="ajouter">
+                </br></br></br>
+            </form>
+            <div id="containerarticles">
+            </div>
+        </div>
+    </section>
+    <!-- Chargement jquery Attention à l'ordre de chargement d'abord Jquery puis le script--> 
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
